@@ -1,0 +1,15 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "Taken a note from user via command line and stored",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Fatih Yavuz",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "yargs": "^17.2.1"
+  }
+}
