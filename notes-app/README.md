@@ -1,49 +1,32 @@
-# What does notes-app?
+# Notes-App
 
-Notes-app allow you add, remove, read and list your notes via command line.
+This CLI application is designed for taking and managing notes using Node.js.
 
-## Goal
+## Getting Started
 
-I wanted to start learning node.js with this simple application. This application getting from named [The Complete node.js developer course](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/) on [udemy.com.](https://www.udemy.com/)
+### Installation
 
-it provided to me
+To install the required packages, run the following command:
 
-- Basic javascript info
-- Interact with command line
-- Interact with file system,
-- Usage of  es6 javascript
-- Usage of third party package
+```bash
+npm install
+```
 
-## Description
+### Usage
 
-It has three main file respectively app.js, notes.js, notes.json. Also user's notes was stored with a json file. Notes-app has two different third party package named [yargs(17.2.1)](https://www.npmjs.com/package/yargs) and [chalk(4.1.2)](https://www.npmjs.com/package/chalk)
+1. **Learn Commands:** To view the available commands, use:
+   `node app.js help`
 
-## Why was used yargs and chalk
+2. **Create a Note:** To add a new note, use the following command:
+   `node app.js add --title "Title of Note" --body "Description of Note"`
 
-When a user add a note, he/she should write below command
-`node app.js add --title="Title Of Note" --body = "Body Of Note"`\
-Yargs helps us to parsing above arguments.\
-After a user run the command, code return back  a message related the result of process to him/his on terminal.Chalk provide us for styling these terminal messages.\
+3. **Delete a Note:** To remove a note, provide the title:
+   ` node app.js remove --title "Title of Note"`
 
-app.js includes yargs commands.Eeach command has a handler function. Theese functions are in notes.js.notes.json use for storing  user's notes.
+4. **List All Notes:** To display a list of all notes, use:
+   `node app.js list`
 
-## Installation
+5. **Read a Note:** To read the contents of a specific note, use:
+   `node app.js read --title "Title of Note"`
 
-After download the project, for install dependencies\
-`npm install`\
-If you don't want to use example notes in notes.json. You can delete this file. When the program runs, automatically created new a notes.json file.
-There is not any other dependencies
-
-## Usage
-
-To test everything is ok, you should run\
-`node app.js help`\
-This provide some info to you how can you use this program.\
-to add note\
-`node app.js add --title="title of note --body="body of note"`\
-to remove the note\
-`node app.js remove --title="title which you want to remove"`\
-to read the note\
-`node app.js read --title="title which you want to read"`\
-to list notes\
-`node app.js list`
+Make sure to replace "Title of Note" and "Description of Note" with your desired title and description.
